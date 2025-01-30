@@ -59,12 +59,20 @@ int main(){
 
     printf("\nIntersecção entre conjuntos\n");
 
-    set2 = add(set2, 10);
-
     print(intersection(set1, set2));
 
     //Há mais funções no arquivo sets.h.
 
+    isIn(set1,20) ? printf("20 Está presente no conjunto 1.\n") : printf("20 Não está presente no conjunto 1.\n");
+
+
+    printf("\n");
+    print(set1);
+
+    printf("\n");
+    print(set2);
+
+    isDisjoint(set1,set2) ? printf("Os conjuntos são disnjuntos.\n") : printf("Há intersecção entre os conjuntos.\n");
     return 0;
 }
 

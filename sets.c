@@ -68,7 +68,15 @@ bool isIn(Set* set, int elem){
         return false;
     }
 
-    return (set->data == elem) || isIn(set->left, elem) || isIn(set->right, elem);
+    if(set->data > elem){
+        return isIn(set->left,elem);
+    }
+
+    if(set->data < elem){
+        return isIn(set->right,elem);
+    }
+
+    return true;
 }
 
 bool isNotIn(Set* set, int elem){
@@ -81,7 +89,7 @@ bool isDisjoint(Set* set1, Set* set2){
         return true;
     }
 
-    return isIn(set2, set1->data) && isDisjoint(set1->left, set2) && isDisjoint(set1->right, set2);
+    return isNotIn(set2, set1->data) && isDisjoint(set1->left, set2) && isDisjoint(set1->right, set2);
 }
 
 Set* remove_(Set* set, int elem){
