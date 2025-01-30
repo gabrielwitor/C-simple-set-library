@@ -3,9 +3,6 @@
 /* Tipo que define o conjunto (Árvore binária). */
 typedef struct set Set;
 
-/* Tipo que define a lista ligada (Tipo auxiliar). */
-// typedef struct linked_list Linked_List;
-
 /* Insere elem no conjunto set. */ 
 Set* add(Set* set, int elem);
 
