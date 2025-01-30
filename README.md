@@ -1,3 +1,5 @@
-Uma implementação nada eficiente da Estrutura de Dados Set (conjunto) utilizando árvores binárias simples.
+Uma biblioteca que implementa a estrutura de dados conjunto na linguagem C.
 
-Gabriel Witor, 2025.
+A biblioteca utiliza árvores binárias de busca e listas encadeadas para alcançar este propósito.
+
+Requisitos:
